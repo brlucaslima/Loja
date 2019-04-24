@@ -16,9 +16,14 @@ public class Principal {
     public static void main(String[] args){
         Carro carro = new Carro();        
         
-        Scanner scan1 = new Scanner(System.in);
-        System.out.print(carro.nome);
-        carro.nome=scan1.next ();
+        Scanner scan = new Scanner(System.in);
+        
+        carro.setNome(scan.next());
+        
+        
+        
+        
+        
         System.out.print(carro.marca);
         carro.marca=scan1.next ();
         System.out.print(carro.cor);
